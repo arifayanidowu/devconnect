@@ -179,7 +179,7 @@ router.post(
               .save()
               .then(profile => res.json(profile));
           })
-          .catch(err => res.json(err));
+          .catch(err => res.status(400).json(err));
       }
     });
   }
@@ -199,7 +199,7 @@ router.post(
     // Check validation
     if (!isValid) {
       // return any errors with 404 status
-      return res.status(400).json(errors);
+      return res.status(404).json(errors);
     }
 
     Profile.findOne({ user: req.user.id }).then(profile => {
