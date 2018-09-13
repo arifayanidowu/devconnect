@@ -46,11 +46,12 @@ img {
   color: #bbb !important;
 }
 
-/* .footer--bottom {
+.footer--bottom {
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100vw;
-  z-index: 1;
-  overflow-x: hidden;
-} */
+  z-index: 999;
+  margin-top: 5rem;
+  overflow: hidden;
+}
