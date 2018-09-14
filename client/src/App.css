@@ -46,12 +46,29 @@ img {
   color: #bbb !important;
 }
 
-.footer--bottom {
-  position: fixed;
+footer {
+  margin-top: 300px;
+}
+
+/* .footer--bottom {
+  display: block;
+  position: absolute;
   bottom: 0;
   left: 0;
   width: 100vw;
-  z-index: 999;
   margin-top: 5rem;
   overflow: hidden;
+} */
+
+.fade-out {
+  animation: fadeOut 300ms forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    transition: all 300ms ease-in-out;
+  }
+  to {
+    transition: all 500ms ease-in-out;
+  }
 }
