@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../actions/authActions";
 import { clearCurrentProfile } from "../../actions/profileActions";
-// import Dashboard from "../dashboard/Dashboard";
 
 class Navbar extends Component {
   onLogoutClick(e) {
